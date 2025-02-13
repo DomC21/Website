@@ -15,10 +15,13 @@ export function Layout({ children }: LayoutProps) {
       {/* Navigation */}
       <nav className="fixed w-full bg-background/80 backdrop-blur-sm border-b border-border z-50">
         <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
-          <Link to="/" className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent animate-glow">
-            Carfagno Enterprises
-          </Link>
-          <div className="flex space-x-2 sm:space-x-6">
+          <div className="flex flex-col items-center sm:items-start">
+            <span className="text-sm text-gray-400 mb-1">Innovating Financial Technology</span>
+            <Link to="/" className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent animate-glow">
+              Carfagno Enterprises
+            </Link>
+          </div>
+          <div className="flex space-x-6">
             <Link to="/coaching"><Button variant="ghost" className="hover:bg-primary/10 transition-colors text-sm sm:text-base px-2 sm:px-4">Coaching</Button></Link>
             <Link to="/projects"><Button variant="ghost" className="hover:bg-primary/10 transition-colors text-sm sm:text-base px-2 sm:px-4">Projects</Button></Link>
             <Link to="/contact"><Button variant="ghost" className="hover:bg-primary/10 transition-colors text-sm sm:text-base px-2 sm:px-4">Contact</Button></Link>

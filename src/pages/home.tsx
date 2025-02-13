@@ -44,13 +44,21 @@ export function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
+            className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 animate-glow-text"
+          >
+            Carfagno Enterprises
+          </motion.h1>
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-glow-text relative"
           >
             The Future of AI-Driven Financial Intelligence
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-xl opacity-50 animate-pulse"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 blur-3xl -z-10 animate-glow-effect"></div>
-          </motion.h1>
-          <motion.h2 
+          </motion.h2>
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ 
@@ -61,7 +69,7 @@ export function Home() {
             className="text-xl sm:text-2xl text-gray-300 mb-6 sm:mb-8 px-4"
           >
             Carfagno Enterprises harnesses AI-driven analytics, cutting-edge investment strategies, and proprietary tools to revolutionize financial decision-making.
-          </motion.h2>
+          </motion.p>
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -85,16 +93,19 @@ export function Home() {
       <section className="py-section-sm sm:py-section px-4 bg-background-secondary/50 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_50%)] animate-pulse"></div>
         <div className="container mx-auto relative">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent animate-fade-in">
+          <div className="text-center mb-4">
+            <span className="text-sm text-gray-400">Our Solutions</span>
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent animate-fade-in">
             Cutting-Edge Projects
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-lg sm:max-w-none mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-lg lg:max-w-none mx-auto">
             <Link to="/projects/neural-networks">
               <Card className="group bg-background-secondary/50 border-border hover:border-primary transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/10 animate-float will-change-transform">
-                <CardHeader className="p-4 sm:p-6">
-                  <Brain className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4 group-hover:animate-glow transition-transform duration-300 group-hover:scale-110" />
-                  <CardTitle className="text-lg sm:text-xl group-hover:text-primary transition-colors duration-300">Neural Networks</CardTitle>
-                  <CardDescription className="text-sm sm:text-base text-gray-400 group-hover:text-gray-300 transition-colors duration-300 line-clamp-3">
+                <CardHeader className="p-6">
+                  <Brain className="w-12 h-12 text-primary mb-4 group-hover:animate-glow transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors duration-300">Neural Networks</CardTitle>
+                  <CardDescription className="text-base text-gray-400 group-hover:text-gray-300 transition-colors duration-300 line-clamp-3">
                     A robust trading tool integrating neural networks and a structured data pipeline to analyze stock price trends.
                   </CardDescription>
                 </CardHeader>
@@ -102,21 +113,21 @@ export function Home() {
             </Link>
             <Link to="/projects/lukz">
               <Card className="group bg-background-secondary/50 border-border hover:border-primary transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent/10 animate-float [animation-delay:200ms] will-change-transform">
-                <CardHeader className="p-4 sm:p-6">
-                  <LineChart className="w-10 h-10 sm:w-12 sm:h-12 text-accent mb-4 group-hover:animate-glow transition-transform duration-300 group-hover:scale-110" />
-                  <CardTitle className="text-lg sm:text-xl group-hover:text-accent transition-colors duration-300">Lukz</CardTitle>
-                  <CardDescription className="text-sm sm:text-base text-gray-400 group-hover:text-gray-300 transition-colors duration-300 line-clamp-3">
+                <CardHeader className="p-6">
+                  <LineChart className="w-12 h-12 text-accent mb-4 group-hover:animate-glow transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="text-xl group-hover:text-accent transition-colors duration-300">Lukz</CardTitle>
+                  <CardDescription className="text-base text-gray-400 group-hover:text-gray-300 transition-colors duration-300 line-clamp-3">
                     A financial analytics platform leveraging API integration for features like Greek flow data and Congressional trades.
                   </CardDescription>
                 </CardHeader>
               </Card>
             </Link>
             <Link to="/projects/zom-ai">
-              <Card className="group bg-background-secondary/50 border-border hover:border-primary transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/10 animate-float [animation-delay:400ms] sm:col-span-2 lg:col-span-1 sm:max-w-md lg:max-w-none mx-auto w-full will-change-transform">
-                <CardHeader className="p-4 sm:p-6">
-                  <Bot className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4 group-hover:animate-glow transition-transform duration-300 group-hover:scale-110" />
-                  <CardTitle className="text-lg sm:text-xl group-hover:text-primary transition-colors duration-300">Zom AI</CardTitle>
-                  <CardDescription className="text-sm sm:text-base text-gray-400 group-hover:text-gray-300 transition-colors duration-300 line-clamp-3">
+              <Card className="group bg-background-secondary/50 border-border hover:border-primary transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/10 animate-float [animation-delay:400ms] will-change-transform">
+                <CardHeader className="p-6">
+                  <Bot className="w-12 h-12 text-primary mb-4 group-hover:animate-glow transition-transform duration-300 group-hover:scale-110" />
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors duration-300">Zom AI</CardTitle>
+                  <CardDescription className="text-base text-gray-400 group-hover:text-gray-300 transition-colors duration-300 line-clamp-3">
                     A cutting-edge stock analysis tool offering real-time updates and ChatGPT-powered insights.
                   </CardDescription>
                 </CardHeader>
