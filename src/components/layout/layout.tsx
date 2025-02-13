@@ -40,6 +40,12 @@ export function Layout({ children }: LayoutProps) {
               Carfagno Enterprises
             </h3>
             <p className="text-sm sm:text-base text-gray-400 mb-4 sm:mb-6">Empowering Investors Everywhere</p>
+            <div className="flex flex-col items-center space-y-4 mb-6">
+              <h2 className="text-2xl sm:text-3xl font-bold text-center">Contact Us</h2>
+              <a href="mailto:DominicCarfagno@carfagnoenterprises.com" className="text-primary hover:text-accent transition-colors">
+                DominicCarfagno@carfagnoenterprises.com
+              </a>
+            </div>
             <div className="flex justify-center space-x-4 sm:space-x-6 mb-6 sm:mb-8">
               {/* TODO: Verify social media URLs with Dom */}
               <a href="https://github.com/carfagno" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors"><Github className="w-5 h-5 sm:w-6 sm:h-6" /></a>

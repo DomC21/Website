@@ -46,7 +46,7 @@ export function Home() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-glow-text relative"
           >
-            AI-Driven Financial Intelligence
+            The Future of AI-Driven Financial Intelligence
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-xl opacity-50 animate-pulse"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 blur-3xl -z-10 animate-glow-effect"></div>
           </motion.h1>
@@ -60,7 +60,7 @@ export function Home() {
             }}
             className="text-xl sm:text-2xl text-gray-300 mb-6 sm:mb-8 px-4"
           >
-            Your Competitive Edge in the Market
+            Carfagno Enterprises harnesses AI-driven analytics, cutting-edge investment strategies, and proprietary tools to revolutionize financial decision-making.
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 10 }}
@@ -123,6 +123,60 @@ export function Home() {
               </Card>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Early Access Section */}
+      <section className="py-section-sm sm:py-section px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.1),transparent_70%)] animate-pulse"></div>
+        <div className="container mx-auto max-w-md sm:max-w-lg lg:max-w-2xl relative animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Get Early Access to Our Tools
+          </h2>
+          <p className="text-xl text-gray-400 text-center mb-8">
+            Subscribe to be the first to explore our cutting-edge financial tools and receive exclusive insights.
+          </p>
+          <div className="space-y-4 relative px-4 sm:px-0">
+            <Input 
+              className="bg-background-secondary/50 border-border focus:border-primary transition-colors h-12" 
+              placeholder="Name" 
+            />
+            <Input 
+              className="bg-background-secondary/50 border-border focus:border-primary transition-colors h-12" 
+              type="email" 
+              placeholder="Email" 
+            />
+            <select className="w-full bg-background-secondary/50 border-border focus:border-primary transition-colors h-12 rounded-md text-gray-400 px-3">
+              <option value="neural-networks">Neural Networks</option>
+              <option value="lukz">Lukz</option>
+              <option value="zom-ai">Zom AI</option>
+            </select>
+            <Button className="w-full bg-primary hover:bg-primary-hover group relative overflow-hidden h-12">
+              <span className="relative z-10">Get Early Access</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-20 transition-opacity"></div>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-section-sm sm:py-section px-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.1),transparent_70%)] animate-pulse"></div>
+        <div className="container mx-auto max-w-2xl text-center relative animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            About Dom Carfagno
+          </h2>
+          <div className="w-32 h-32 mx-auto mb-6 relative group">
+            <img
+              src="/images/dom-profile.jpg"
+              alt="Dom Carfagno"
+              className="rounded-full object-cover w-full h-full border-2 border-primary/20 group-hover:border-primary/40 transition-colors duration-300"
+            />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/10 to-accent/10 group-hover:from-primary/20 group-hover:to-accent/20 transition-all duration-300"></div>
+          </div>
+          <p className="text-xl text-gray-400">
+            Hi, I'm Dom Carfagno, the founder of Carfagno Enterprises. With a deep passion for innovation and financial markets, I'm dedicated to creating cutting-edge tools that empower investors to succeed.
+          </p>
         </div>
       </section>
 
