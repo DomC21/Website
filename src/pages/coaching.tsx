@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { Button } from "../components/ui/button"
+import { Input } from "../components/ui/input"
+import { Textarea } from "../components/ui/textarea"
 import { Brain, Target, TrendingUp } from "lucide-react"
 
 interface Testimonial {
@@ -42,6 +42,21 @@ export function Coaching() {
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Unlock your investment potential with personalized coaching that combines traditional financial wisdom with cutting-edge AI tools.
+          </p>
+        </div>
+
+        {/* Profile Section */}
+        <div className="text-center mb-16 animate-fade-in [animation-delay:200ms]">
+          <div className="w-32 h-32 mx-auto mb-6 relative group">
+            <img
+              src="/images/dom-profile.jpg"
+              alt="Dom Carfagno"
+              className="rounded-full object-cover w-full h-full border-2 border-primary/20 group-hover:border-primary/40 transition-colors duration-300"
+            />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/10 to-accent/10 group-hover:from-primary/20 group-hover:to-accent/20 transition-all duration-300"></div>
+          </div>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            Hi, I'm Dom Carfagno, the founder of Carfagno Enterprises. With a deep passion for innovation and financial markets, I'm dedicated to creating cutting-edge tools that empower investors to succeed.
           </p>
         </div>
 
@@ -103,12 +118,17 @@ export function Coaching() {
               placeholder="Email" 
               className="bg-background-secondary/50 border-border focus:border-primary transition-colors h-12" 
             />
+            <select className="w-full bg-background-secondary/50 border-border focus:border-primary transition-colors h-12 rounded-md text-gray-400 px-3">
+              <option value="neural-networks">Neural Networks</option>
+              <option value="lukz">Lukz</option>
+              <option value="zom-ai">Zom AI</option>
+            </select>
             <Textarea 
               placeholder="Tell us about your trading experience and goals" 
               className="bg-background-secondary/50 border-border focus:border-primary transition-colors min-h-32" 
             />
             <Button className="w-full bg-primary hover:bg-primary-hover group relative overflow-hidden h-12">
-              <span className="relative z-10">Request Coaching</span>
+              <span className="relative z-10">Get Early Access</span>
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-20 transition-opacity"></div>
             </Button>
           </form>
