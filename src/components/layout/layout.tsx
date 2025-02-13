@@ -41,9 +41,10 @@ export function Layout({ children }: LayoutProps) {
             </h3>
             <p className="text-sm sm:text-base text-gray-400 mb-4 sm:mb-6">Empowering Investors Everywhere</p>
             <div className="flex justify-center space-x-4 sm:space-x-6 mb-6 sm:mb-8">
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors"><Github className="w-5 h-5 sm:w-6 sm:h-6" /></a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors"><Linkedin className="w-5 h-5 sm:w-6 sm:h-6" /></a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors"><Twitter className="w-5 h-5 sm:w-6 sm:h-6" /></a>
+              {/* TODO: Verify social media URLs with Dom */}
+              <a href="https://github.com/carfagno" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors"><Github className="w-5 h-5 sm:w-6 sm:h-6" /></a>
+              <a href="https://linkedin.com/in/dominic-carfagno" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors"><Linkedin className="w-5 h-5 sm:w-6 sm:h-6" /></a>
+              <a href="https://twitter.com/carfagno" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors"><Twitter className="w-5 h-5 sm:w-6 sm:h-6" /></a>
             </div>
             <p className="text-xs sm:text-sm text-gray-500">© 2024 Carfagno Enterprises. All rights reserved.</p>
           </div>

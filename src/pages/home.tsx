@@ -14,7 +14,7 @@ export function Home() {
     <div className="overflow-hidden">
       <AnimatedLogo />
       {/* Stock Ticker */}
-      <div className="fixed top-4 w-full overflow-hidden whitespace-nowrap py-2 bg-background/30 backdrop-blur-sm z-50">
+      <div className="fixed top-12 w-full overflow-hidden whitespace-nowrap py-2 bg-background/30 backdrop-blur-sm z-50">
         <div className="flex relative">
           <div className="animate-ticker inline-block min-w-full px-2 absolute left-0">
             <span className="mx-4 text-primary font-medium">AAPL +2.3%</span>
